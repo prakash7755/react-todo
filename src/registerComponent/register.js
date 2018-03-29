@@ -16,6 +16,12 @@ class Register extends Component {
       formData[field] = this.refs[field].value;
     }
     signupUser(formData)
+     .then(data => {
+     	localStorage.setItem('token', data.token)
+     })
+     .catch(error => {
+     	console.log(error)
+     })
   }
 	render(){
 		return (

@@ -16,6 +16,12 @@ class Login extends Component {
       formData[field] = this.refs[field].value;
     }
     loginUser(formData)
+    .then(data => {
+    	localStorage.setItem('token', data.token)
+    })
+    .catch(error => {
+    	console.log(error)
+    })
   }
 	render(){
 		return (
