@@ -1,13 +1,8 @@
-import React from 'react'
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-import Register from './registerComponent/register'
-import Login from './loginComponent/login'
-import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
+import Register from './registerComponent/register';
+import Login from './loginComponent/login';
 
 
 const App = () => (
@@ -23,8 +18,8 @@ const App = () => (
       </div>
       </nav>
       <div>
-       <Route path="/register" component={Register}/>
-       <Route path="/login" component={Login}/>
+       <Route path="/register" component={Register} />
+       <Route path="/login" component={Login} />
     </div>
     </div>
   </Router>
