@@ -11,7 +11,9 @@ import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-boots
 
 
 const App = () => (
+ 
   <Router>
+  <div>
    <nav className="navbar navbar-inverse">
     <div className="container-fluid">
       <ul className="nav navbar-nav">
@@ -19,11 +21,13 @@ const App = () => (
         <li><Link to="/login">Login</Link></li>
       </ul>
       </div>
+      </nav>
       <div>
        <Route path="/register" component={Register}/>
        <Route path="/login" component={Login}/>
     </div>
-    </nav>
+    </div>
   </Router>
+
 )
 export default App
